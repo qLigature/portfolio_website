@@ -16,8 +16,12 @@
   );
 }
 
+.custom-toggler {
+  border-color: transparent !important;
+}
+
 .custom-bg {
-    background-color: #142430;
+  background-color: #142430;
 }
 
 .banner-gradient h1 {
@@ -31,6 +35,12 @@
 
 .nav-transparent {
   background-color: transparent !important;
+}
+
+.offcanvas .nav-item {
+    font-size: 40px;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 /* Credits to: https://codepen.io/mohaiman/pen/MQqMyo */
@@ -142,3 +152,27 @@
     border-radius: 50%;
   }
 }
+
+/* Credits to: https://www.shapedivider.app/ */
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 137px;
+  transform: rotateY(180deg);
+}
+
+.wave .shape-fill {
+  fill: #142430;
+}
+
