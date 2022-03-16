@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav id="coolNav" class="navbar navbar-light navbar-expand-md navbar-dark fixed-top">
+    <nav id="coolNav" class="navbar navbar-expand-md navbar-dark text-light fixed-top">
         <div class="container-fluid">
             <button data-bs-toggle="offcanvas" class="navbar-toggler ms-auto custom-toggler btn-lg"
                 data-bs-target="#offcanvasRight">
@@ -20,24 +20,24 @@
             </button>
             <div class="collapse navbar-collapse" id="sleekLinks">
                 <ul class="navbar-nav ms-4">
-                    <li class="nav-item"><a class="nav-link" href="#fancyBanner">home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">contacts</a></li>
+                    <li class="nav-item"><a class="nav-link underline-effect" href="#fancyBanner">home</a></li>
+                    <li class="nav-item"><a class="nav-link underline-effect" href="#about">about</a></li>
+                    <li class="nav-item"><a class="nav-link underline-effect" href="#projects">projects</a></li>
+                    <li class="nav-item"><a class="nav-link underline-effect" href="#">contacts</a></li>
                 </ul>
             </div>
 
             <div class="offcanvas offcanvas-end custom-bg" tabindex="-1" id="offcanvasRight"
                 aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
-                    <button type="button" class="btn-close text-reset bg-light ms-auto me-3" data-bs-dismiss="offcanvas"
+                    <button type="button" class="btn-close text-reset bg-light ms-auto me-3 mt-2" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body d-md-none" id="sleekLinks2">
                     <ul class="navbar-nav" id="sleekLinks3">
                         <li class="nav-item"><a class="nav-link" href="#fancyBanner">home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">contacts</a></li>
                     </ul>
                 </div>
@@ -71,7 +71,7 @@
 
             </ul>
         </div>
-        <div class="wave">
+        <div class="banner-wave">
             <svg data-name="Cool Wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">
                 <path
@@ -93,7 +93,7 @@
                     <img src="./miku.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
-                    <p class="lead">I'm a developer who loves seeing interactive solutions come to life.</p>
+                    <p class="lead">I'm a developer who loves seeing <span class="accent underline-effect">interactive</span> solutions come to life.</p>
                     <p>Many business problems in the digital space stem from a disconnect between users and the user interface. Both the visual and the technical aspects of digital products present several ways to bridge this gap. As a full-stack engineer, I'm happiest being able to innovate on both ends and create a better user experience.</p>
                 </div>
             </div>
@@ -103,8 +103,8 @@
     <!-- Credits to: https://devicon.dev/ -->
     <div class="p-5 text-light custom-bg text-center">
         <h1 class="mb-5 mx-0">My Toolbox</h1>
-        <div class="container">
-            <div class="row g-3">
+        <div class="container pb-5">
+            <div class="row pb-5 g-3">
                 <div class="col-6 col-sm-4 col-md-2">
                     <h1><i class="devicon-html5-plain"></i></h1>
                     <h4>HTML 5</h4>
@@ -147,7 +147,7 @@
                 </div>
                 <div class="col-6 col-sm-4 col-md-2">
                     <h1><i class="devicon-sass-plain"></i></h1>
-                    <h4>SASS</h4>
+                    <h4>Sass</h4>
                 </div>
                 <div class="col-6 col-sm-4 col-md-2">
                     <h1><i class="devicon-linux-plain"></i></h1>
@@ -157,52 +157,88 @@
         </div>
     </div>
 
-    <div class="p-5 text-light custom-bg">
-        <div class="container">
-            <h1>Projects</h1>
-            <p>insert projects here</p>
+    <div class="p-5 text-light custom-bg2 position-relative">
+        <div class="project-wave">
+            <svg data-name="Nice Wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
         </div>
+        <div id="projects" class="container pt-5 text-kinda-dark">
+
+            <div  class="row py-4 mt-3">
+                <div class="col">
+                    <h1 class="text-center">Projects</h1>
+                </div>
+            </div>
+
+            <div class="row pt-0 pt-lg-5 g-3">
+                <div class="col-12 col-lg-6 mt-5 mt-lg-0 d-flex justify-content-center order-lg-1">
+                    <img src="./project1.PNG" class="img-fluid" alt="">
+                </div>
+                <div class="col-12 col-lg-6 px-5 d-flex flex-column justify-content-center">
+                    <h2 class="pt-2 pt-lg-0">Greenback Winner Enterprise</h2>
+                    <hr>
+                    <p class="pt-2 pb-1">My first full website for a client, built with Sass and Bootstrap 5. To pull this off, I did research on the fundamentals of company websites and layouts. Learning concepts like color theory, call to action, and SEO were essential to this project's success.</p>
+                    <p class="h2 pt-0 pb-2"><i class="devicon-html5-plain"></i> <i class="devicon-css3-plain"></i> <i class="devicon-javascript-plain"></i> <i class="devicon-bootstrap-plain"></i> <i class="devicon-sass-original"></i> <i class="devicon-photoshop-plain"></i></p>
+                    <div class="btn-wrapper">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><span>Open In New Tab</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-0 pt-lg-5 mt-5 g-3">
+                <div class="col-12 col-lg-6 mt-5 mt-lg-0 d-flex justify-content-center order-lg-first">
+                    <img src="./project2.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-12 col-lg-6 px-5 d-flex flex-column justify-content-center bg-translucent">
+                    <h2 class="pt-2 pt-lg-0">FullStack Cafe V2 (Ongoing)</h2>
+                    <hr>
+                    <p class="pt-2 pb-1">A web app for reviewing common interview questions on full-stack development and system design. The new open-source version features a sleeker UI and shorter latency via Redis. Me and a few others are currently working on the backend portion of the app.</p>
+                    <p class="h2 pt-0 pb-2"><i class="devicon-mysql-plain"></i> <i class="devicon-express-original"></i> <i class="devicon-react-original"></i> <i class="devicon-nodejs-plain"></i> <i class="devicon-redis-plain"></i></p>
+                    <div class="btn-wrapper">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><span>Open In New Tab</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-0 pt-lg-5 mt-5 mb-5 g-3">
+                <div class="col-12 col-lg-6 mt-5 mt-lg-0 d-flex justify-content-center order-lg-1">
+                    <img src="./project3.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-12 col-lg-6 px-5 d-flex flex-column justify-content-center">
+                    <h2 class="pt-2 pt-lg-0">Personal Website</h2>
+                    <hr>
+                    <p class="pt-2 pb-1">A website for myself, as part of Zuitt's requirements. This site features heavy use of custom CSS effects and themes. Much time was devoted to designing and developing the specific components used here, many of them new to me at the time.</p>
+                    <p class="h2 pt-0 pb-2"><i class="devicon-html5-plain"></i> <i class="devicon-css3-plain"></i> <i class="devicon-javascript-plain"></i> <i class="devicon-bootstrap-plain"></i></p>
+                    <div class="btn-wrapper">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><span>Open In New Tab</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="cool-circles really-cool-circles">
+
+            <li id="'Wolf!'' cried my cunning heart"></li>
+            <li id="At every sheep it spied,"></li>
+            <li id="And roused the countryside."></li>
+
+            <li id="'Wolf! Wolf!'—and up would start"></li>
+            <li id="Good neighbours, bringing spade"></li>
+            <li id="And pitchfork to my aid."></li>
+
+            <li id="At length my cry was known:"></li>
+            <li id="Therein lay my release."></li>
+            <li id="I met the wolf alone"></li>
+            <li id="And was devoured in peace."></li>
+
+        </ul>
     </div>
 
     <div class="p-5 text-light custom-bg">
         <div class="container">
             <h1>more stuff</h1>
             <p>more stuffe</p>
-        </div>
-    </div>
-
-    <div class="p-5 text-light custom-bg">
-        <div class="container">
-            <h1>more stuff</h1>
-            <p>more stuffe</p>
-        </div>
-    </div>
-
-    <div class="p-5 text-light custom-bg">
-        <div class="container">
-            <h1>more stuff</h1>
-            <p>more stuff</p>
-        </div>
-    </div>
-
-    <div class="p-5 text-light custom-bg">
-        <div class="container">
-            <h1>more stuff</h1>
-            <p>more stuff</p>
-        </div>
-    </div>
-
-    <div class="p-5 text-light custom-bg">
-        <div class="container">
-            <h1>more stuff</h1>
-            <p>more stuff</p>
-        </div>
-    </div>
-
-    <div class="p-5 text-light custom-bg">
-        <div class="container">
-            <h1>more stuff</h1>
-            <p>more stuff</p>
         </div>
     </div>
 
@@ -256,7 +292,7 @@
         let myLinks = document.getElementById('sleekLinks3')
 
         myLinks.addEventListener('click', function () {
-            setTimeout(function () { myOffcanvas.hide() }, 350);
+            setTimeout(function () { myOffcanvas.hide() }, 450);
         })
     </script>
 </body>
