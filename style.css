@@ -45,9 +45,11 @@ body {
   line-height: 1.6;
 }
 
-span {
+span.accent {
   color: var(--clr-accent);
 }
+
+
 
 #toolbox i {
   font-size: 4.5rem;
@@ -210,6 +212,10 @@ img {
   background-color: var(--clr-ff);
   visibility: hidden;
   transition: all 0.3s ease-in-out;
+}
+
+span.accent.underline-effect::before {
+  background-color: var(--clr-accent);
 }
 
 .underline-effect:hover::before {
