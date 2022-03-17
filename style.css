@@ -45,6 +45,10 @@ body {
   line-height: 1.6;
 }
 
+span {
+  color: var(--clr-accent);
+}
+
 #toolbox i {
   font-size: 4.5rem;
 }
