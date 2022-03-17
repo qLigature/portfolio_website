@@ -45,6 +45,10 @@ body {
   line-height: 1.6;
 }
 
+#toolbox i {
+  font-size: 4.5rem;
+}
+
 /* Credits to: https://getcssscan.com/css-box-shadow-examples */
 img {
   box-shadow: rgba(0, 0, 0, 19%) 0px 10px 20px, rgba(0, 0, 0, 23%) 0px 6px 6px;
