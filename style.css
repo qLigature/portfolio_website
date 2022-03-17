@@ -1,47 +1,190 @@
+/* General Rulesets */
+
+:root {
+  --clr-dominant: #142430;
+  --clr-secondary: #526270;
+  --clr-accent: gold;
+  --clr-sidebar: #142430e5;
+  --clr-footer: #0f1b24;
+  --clr-ff: white;
+
+  --clr-bg-circles: rgba(255, 255, 255, 20%);
+
+  --ff-heading: "Oxygen", sans-serif;
+  --ff-body: "Oxygen", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--clr-dominant);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: var(--clr-dominant);
+}
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-button {
+  background-color: var(--clr-dominant);
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-* {
-  /* border: 1px solid red; */
-}
-
 body {
-  font-family: "Oxygen";
-}
-
-h1 i {
-  font-size: 69px;
-}
-
-p {
+  font-family: var(--ff-body);
+  color: var(--clr-ff);
   line-height: 1.6;
 }
 
 /* Credits to: https://getcssscan.com/css-box-shadow-examples */
 img {
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  box-shadow: rgba(0, 0, 0, 19%) 0px 10px 20px, rgba(0, 0, 0, 23%) 0px 6px 6px;
 }
 
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+.custom-bg {
+  background-color: var(--clr-dominant);
 }
-::-webkit-scrollbar-track {
-  background-color: #142430;
-  border-radius: 10px;
+
+.custom-bg2 {
+  background-color: var(--clr-secondary);
 }
-::-webkit-scrollbar-track-piece {
-  background-color: #142430;
+
+.custom-bg.offcanvas {
+  background-color: var(--clr-sidebar);
 }
-::-webkit-scrollbar-thumb {
-  background-color: #ffffff;
-  border-radius: 10px;
+
+.nav-colored {
+  background-color: var(--clr-dominant) !important;
 }
-::-webkit-scrollbar-button {
-  background-color: #142430;
+
+.nav-transparent {
+  background-color: transparent !important;
+}
+
+.banner-wave .shape-fill,
+.project-wave .shape-fill,
+.contact-wave .shape-fill {
+  fill: var(--clr-dominant);
+}
+
+.custom-footer {
+  background-color: var(--clr-footer);
+}
+
+/* Button Ruleset */
+/* Credits to: https://codepen.io/thelaazyguy/details/brryVq */
+.btn-wrapper a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 35px;
+
+  text-decoration: none;
+  color: var(--clr-accent);
+  border: 2px solid var(--clr-accent);
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+}
+
+.btn-wrapper a span {
+  position: relative;
+  z-index: 2;
+}
+
+.btn-wrapper a:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--clr-accent);
+  transition: all 0.35s;
+}
+
+.btn-wrapper a:hover {
+  color: var(--clr-dominant);
+}
+
+.btn-wrapper a:hover:after {
+  width: 100%;
+}
+
+/* Section Divider Ruleset */
+/* Credits to: https://www.shapedivider.app/ */
+.banner-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.banner-wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 137px;
+  transform: rotateY(180deg);
+}
+
+.project-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.project-wave svg {
+  position: relative;
+  display: block;
+  width: calc(145% + 1.3px);
+  height: 113px;
+  transform: rotateY(180deg);
+}
+
+.contact-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.contact-wave svg {
+  position: relative;
+  display: block;
+  width: calc(112% + 1.3px);
+  height: 76px;
+  transform: rotateY(180deg);
+}
+
+/* Navbar Section */
+
+.no-btn-border {
+  border-color: transparent !important;
+}
+
+#sidebar-links .nav-item {
+  font-size: 40px;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 /* credits to: https://paulund.co.uk/css-animation-link-underline */
@@ -52,11 +195,11 @@ img {
 .underline-effect::before {
   content: "";
   position: absolute;
-  width: 0;
   height: 1px;
+  width: 0;
   bottom: 0;
   left: 0;
-  background-color: #a7adb1;
+  background-color: var(--clr-ff);
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
@@ -65,6 +208,8 @@ img {
   visibility: visible;
   width: 100%;
 }
+
+/* Banner Section */
 
 .banner-gradient {
   height: 100vh;
@@ -84,41 +229,12 @@ img {
   );
 }
 
-.no-btn-border {
-  border-color: transparent !important;
-}
-
-.custom-bg {
-  background-color: #142430;
-}
-
-.custom-bg2 {
-  background-color: #526270;
-}
-
-.custom-bg.offcanvas {
-  background-color: #142430e5;
-}
-
-.banner-gradient h1 {
-  font-size: 60px;
+#banner-heading {
+  font-size: 4.25rem;
   font-weight: bold;
 }
 
-.nav-colored {
-  background-color: #142430 !important;
-}
-
-.nav-transparent {
-  background-color: transparent !important;
-}
-
-.offcanvas .nav-item {
-  font-size: 40px;
-  margin-left: 1.5rem;
-  margin-bottom: 1rem;
-}
-
+/* Banner & Projects Animation */
 /* Credits to: https://codepen.io/mohaiman/pen/MQqMyo */
 .cool-circles {
   position: absolute;
@@ -135,9 +251,13 @@ img {
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgba(255, 255, 255, 0.2);
-  animation: animate 25s linear infinite;
+  background: var(--clr-bg-circles);
+  animation: squares 25s linear infinite;
   bottom: -150px;
+}
+
+.really-cool-circles li {
+  animation: circles 45s linear infinite;
 }
 
 .cool-circles li:nth-child(1) {
@@ -215,7 +335,7 @@ img {
   animation-duration: 11s;
 }
 
-@keyframes animate {
+@keyframes squares {
   0% {
     transform: translateY(0) rotate(0deg);
     opacity: 0.7;
@@ -229,102 +349,7 @@ img {
   }
 }
 
-/* Credits to: https://www.shapedivider.app/ */
-.banner-wave {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.banner-wave svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 137px;
-  transform: rotateY(180deg);
-}
-
-.banner-wave .shape-fill {
-  fill: #142430;
-}
-
-.project-wave {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.project-wave svg {
-  position: relative;
-  display: block;
-  width: calc(145% + 1.3px);
-  height: 113px;
-  transform: rotateY(180deg);
-}
-
-.project-wave .shape-fill {
-  fill: #142430;
-}
-
-span.accent {
-  color: gold;
-}
-
-span.accent::before {
-  background-color: gold;
-  height: 1px;
-}
-
-.btn-wrapper a {
-  display: block;
-  width: 200px;
-  height: 40px;
-  line-height: 35px;
-
-  text-decoration: none;
-  color: gold;
-  border: 2px solid gold;
-  text-align: center;
-  position: relative;
-  transition: all 0.35s;
-}
-
-.btn-wrapper a span {
-  position: relative;
-  z-index: 2;
-}
-
-.btn-wrapper a:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: gold;
-  transition: all 0.35s;
-}
-
-.btn-wrapper a:hover {
-  color: #142430;
-}
-
-.btn-wrapper a:hover:after {
-  width: 100%;
-}
-
-.really-cool-circles li {
-  animation: animate2 45s linear infinite;
-}
-
-@keyframes animate2 {
+@keyframes circles {
   0% {
     transform: translateY(0) rotate(0deg);
     opacity: 0.7;
@@ -338,51 +363,28 @@ span.accent::before {
   }
 }
 
-.contact-wave {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.contact-wave svg {
-  position: relative;
-  display: block;
-  width: calc(112% + 1.3px);
-  height: 76px;
-  transform: rotateY(180deg);
-}
-
-.contact-wave .shape-fill {
-  fill: #142430;
-}
+/* Contact Section */
 
 .custom-form {
   background-color: transparent !important;
+  color: var(--clr-ff) !important;
+  font-size: 1.25rem;
   border-radius: 0 !important;
-  color: white !important;
-  /* border: 1px white !important; */
-  font-size: 20px;
 }
 
 .custom-form:focus {
   box-shadow: none !important;
-  border-color: gold !important;
+  border-color: var(--clr-accent) !important;
 }
 
-.custom-footer {
-  background-color: #0f1b24;
-}
+/* Footer Section */
 
-footer .social-media a {
-  color: white !important;
+.social-media a {
+  color: var(--clr-ff) !important;
   text-decoration: none !important;
-  letter-spacing: 10px;
+  letter-spacing: 0.625rem;
 }
 
-footer .social-media a:hover {
-  color: gold !important;
+.social-media a:hover {
+  color: var(--clr-accent) !important;
 }

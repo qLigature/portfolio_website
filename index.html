@@ -4,22 +4,31 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Dev Icons CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Personal CSS -->
     <link rel="stylesheet" href="./style.css">
+
     <title>Jacob Reyes: Full Stack Developer</title>
 </head>
 
 <body data-bs-spy="scroll" class="text-light">
+
+    <!-- Navbar Section -->
     <nav id="navigation-bar" class="navbar navbar-expand-md navbar-dark fixed-top">
         <div class="container-fluid">
             <button data-bs-toggle="offcanvas" class="navbar-toggler no-btn-border ms-auto" data-bs-target="#sidebar">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!-- Top Navbar -->
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-4">
                     <li class="nav-item"><a class="nav-link underline-effect" href="#home">home</a></li>
@@ -29,6 +38,7 @@
                 </ul>
             </div>
 
+            <!-- Sidebar -->
             <div class="offcanvas offcanvas-end custom-bg" tabindex="-1" id="sidebar" aria-labelledby="sidebar">
                 <div class="offcanvas-header">
                     <button type="button" class="btn-close bg-light mt-2 ms-auto me-3" data-bs-dismiss="offcanvas"
@@ -43,15 +53,17 @@
                     </ul>
                 </div>
             </div>
-
         </div>
     </nav>
 
+    <!-- Banner Section -->
     <div id="home" class="p-5 banner-gradient">
         <div class="container-fluid pt-5">
+            <p class="py-0 py-md-5">ㅤㅤㅤㅤㅤㅤㅤ</p>
             <p class="mt-5 mb-2 lead">Hi, my name is</p>
-            <h1>Jacob Reyes</h1>
+            <h1 id="banner-heading">Jacob Reyes</h1>
             <p class="my-3 lead">full-stack developer, focused on sharing beautiful and functional experiences.</p>
+            <!-- Animated BG -->
             <ul class="cool-circles">
 
                 <li id="A wink from Hesper, falling"></li>
@@ -68,6 +80,7 @@
 
             </ul>
         </div>
+        <!-- Wave Divider SVG -->
         <div class="banner-wave">
             <svg data-name="Cool Wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">
@@ -78,6 +91,7 @@
         </div>
     </div>
 
+    <!-- About Section -->
     <div class="custom-bg p-5">
         <div class="container py-5">
             <div id="about" class="row py-5">
@@ -101,11 +115,12 @@
         </div>
     </div>
 
-    <!-- Credits to: https://devicon.dev/ -->
+    <!-- Toolbox Section -->
     <div class="p-5 custom-bg text-center">
         <h1 class="mx-0 mb-5 fw-bold">My Toolbox</h1>
         <div class="container pb-5">
             <div class="row pb-5 g-3">
+                <!-- Credits to: https://devicon.dev/ -->
                 <div class="col-6 col-sm-4 col-md-2">
                     <h1><i class="devicon-html5-plain"></i></h1>
                     <h4>HTML 5</h4>
@@ -158,6 +173,7 @@
         </div>
     </div>
 
+    <!-- Projects Section -->
     <div class="p-5 custom-bg2 position-relative">
         <div class="project-wave">
             <svg data-name="Nice Wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -199,6 +215,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="row pt-0 pt-lg-5 mt-5 mb-5 g-3">
                 <div class="col-12 col-lg-6 mt-5 mt-lg-0 d-flex justify-content-center">
                     <img src="./project2.png" class="img-fluid" alt="">
@@ -217,6 +234,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="row pt-0 pt-lg-5 mt-5 mb-5 g-3">
                 <div class="col-12 col-lg-6 mt-5 mt-lg-0 d-flex justify-content-center order-lg-1">
                     <img src="./project3.png" class="img-fluid" alt="">
@@ -240,6 +258,7 @@
             </div>
         </div>
 
+        <!-- Another BG Animation -->
         <ul class="cool-circles really-cool-circles">
 
             <li id="'Wolf!'' cried my cunning heart"></li>
@@ -273,9 +292,10 @@
         </div>
     </div>
 
+    <!-- Contact Section -->
     <div class="p-5 custom-bg">
-        <div class="container py-5">
-            <div id="contact" class="row pt-5 pb-3">
+        <div id="contact" class="container py-5">
+            <div class="row pt-5 pb-3">
                 <div class="col text-center">
                     <h1 class="fw-bold">Contact</h1>
                     <p class="lead pt-3 px-0">Have any questions? Want to build something amazing together?</p>
@@ -294,7 +314,7 @@
                             required></textarea>
 
                         <!-- <button type="submit" class="btn btn-block bg-success text-white">Submit</button> -->
-                        <div class="btn-wrapper ">
+                        <div class="btn-wrapper">
                             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
                                 class="ms-auto"><span>Send</span></a>
                         </div>
@@ -304,6 +324,7 @@
         </div>
     </div>
 
+    <!-- Footer -->
     <footer class="p-4 custom-footer">
         <div class="container d-flex flex-column flex-md-row align-items-center justify-content-md-between">
             <p class="text-center">&copy; 2022 | Designed & Built by Jacob Reyes</p>
@@ -316,10 +337,14 @@
         </div>
     </footer>
 
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
     <script>
+        // Changes the Navbar BG depending on whether the user has scrolled past the banner div or not
         const topNav = document.getElementById('navigation-bar');
         const bannerDiv = document.getElementById('home');
         const bannerHeight = bannerDiv.clientHeight;
@@ -334,6 +359,7 @@
             }
         };
 
+        // Automatically closes the sidebar after the user clicks on a link
         const sidebar = new bootstrap.Offcanvas(document.getElementById('sidebar'));
         const sidebarLinks = document.getElementById('sidebar-links');
         const sideBarDelay = 450; // how long the sidebar waits after clicking a link, before closing automatically
