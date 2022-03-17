@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Oxygen';
+  font-family: "Oxygen";
 }
 
 h1 i {
@@ -84,7 +84,7 @@ img {
   );
 }
 
-.custom-toggler {
+.no-btn-border {
   border-color: transparent !important;
 }
 
@@ -280,13 +280,6 @@ span.accent {
 span.accent::before {
   background-color: gold;
   height: 1px;
-}
-
-.text-kinda-dark {
-  color: white;
-}
-
-.btn-wrapper {
 }
 
 .btn-wrapper a {
