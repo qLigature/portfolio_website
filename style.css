@@ -8,6 +8,10 @@
   /* border: 1px solid red; */
 }
 
+body {
+  font-family: 'Oxygen';
+}
+
 h1 i {
   font-size: 69px;
 }
@@ -339,4 +343,53 @@ span.accent::before {
     opacity: 0;
     border-radius: 100%;
   }
+}
+
+.contact-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.contact-wave svg {
+  position: relative;
+  display: block;
+  width: calc(112% + 1.3px);
+  height: 76px;
+  transform: rotateY(180deg);
+}
+
+.contact-wave .shape-fill {
+  fill: #142430;
+}
+
+.custom-form {
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  color: white !important;
+  /* border: 1px white !important; */
+  font-size: 20px;
+}
+
+.custom-form:focus {
+  box-shadow: none !important;
+  border-color: gold !important;
+}
+
+.custom-footer {
+  background-color: #0f1b24;
+}
+
+footer .social-media a {
+  color: white !important;
+  text-decoration: none !important;
+  letter-spacing: 10px;
+}
+
+footer .social-media a:hover {
+  color: gold !important;
 }
